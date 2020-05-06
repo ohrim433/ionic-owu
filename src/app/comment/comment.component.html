@@ -1,0 +1,13 @@
+<div *ngFor="let comment of comments">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>id: {{comment.id}}</ion-card-subtitle>
+      <ion-card-subtitle>from post: {{comment.postId}}</ion-card-subtitle>
+      <ion-card-title>{{comment.name}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>{{comment.body}}</div>
+    </ion-card-content>
+  </ion-card>
+</div>

@@ -1,0 +1,16 @@
+<div *ngFor="let user of users">
+  <ion-card>
+    <div class="img-container"><img src="./assets/avatar.png" /></div>
+    <ion-card-header>
+      <ion-card-subtitle>id: {{user.id}}</ion-card-subtitle>
+      <ion-card-title>{{user.username}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>name - {{user.name}}</div>
+      <div>email - {{user.email}}</div>
+      <div>website - {{user.website}}</div>
+      <div>phone - {{user.phone}}</div>
+    </ion-card-content>
+  </ion-card>
+</div>
